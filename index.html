@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বাংলা বাগধারা — Bangla Idioms BD</title>
+<meta name="description" content="48 well-known Bangla idioms (বাগধারা) with literal and actual meanings, examples, search, and a meaning quiz. Fully offline.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="head-row">
+    <div>
+      <h1>বাংলা বাগধারা <span class="h1-en">Bangla Idioms</span></h1>
+      <p id="tagline"></p>
+    </div>
+    <button id="langBtn" class="lang">English</button>
+  </div>
+</header>
+<main>
+  <section class="controls">
+    <input id="search" type="search" aria-label="Search idioms">
+    <button id="favToggle" class="chip"></button>
+  </section>
+  <section id="cats" class="cats" aria-label="Categories"></section>
+  <p id="count" class="count"></p>
+
+  <section class="ofday">
+    <h2 id="ofDayTitle"></h2>
+    <div id="ofDay"></div>
+  </section>
+
+  <section id="list" class="grid" aria-label="Idiom list"></section>
+
+  <section class="quiz">
+    <h2 id="quizTitle"></h2>
+    <button id="startQuiz" class="primary"></button>
+    <div id="quizBox"></div>
+  </section>
+
+  <aside id="detail" class="detail" aria-live="polite"></aside>
+</main>
+<footer><p id="footerText"></p></footer>
+<script src="data.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
